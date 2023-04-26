@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    font-size: 20px;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+}
+
+.App-box {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    margin: 60px 30px 40px;
+    overscroll-behavior: contain;
+    overflow-y: scroll;
+    overflow-wrap:break-word;
+}
+
+.modal {
+    width: 70%;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+}
+
+.button {
+    background-color: coral;
+    border: solid 1px gray;
+    padding: 8px 16px;
+}
+
+.OpenButton {
+    font-weight:bold;
+    color: whitesmoke;
+}
+
+
+.CloseButton {
+    background-color: whitesmoke;
+    color: gray;
+    width: 20px;
+    height: 20px;
+    padding: 0.2em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.CloseTextButton {
+    font-weight: bold;
+    padding: 0.5em;
+    width: 100px;
+    position: absolute;
+    bottom: 20px;
+}
+
